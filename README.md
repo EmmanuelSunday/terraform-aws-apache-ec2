@@ -9,11 +9,11 @@ provider "aws" {
 
 module "apache" {
   source        = ".//terraform-aws-apache-ec2"
-  vpc_id        = "vpc-057776654a3c55177"
+  vpc_id        = "vpc-000000000"
   instance_type = "t2.micro"
-  my_ip_cidr    = "199.126.245.108/32"
+  my_ip_cidr    = "MY_IP_ADDRESS/32"
   server_name   = "Apache-Server"
-  public_key    = "awesome-key-east1"
+  public_key    = "ssh-rsa AAAAAAAAAAAB"
 }
 
 ```
